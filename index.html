@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>PonyBuy spreadsheet | Categorias, tamanhos e envio</title>
+  <meta name="description" content="Explore o guia PonyBuy spreadsheet em português. Navegue pelas categorias da CAFANS e saiba como comparar medidas, fotos de controlo de qualidade e custos de envio.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="PonyBuy spreadsheet | Categorias, tamanhos e envio">
+  <meta property="og:description" content="Categorias da CAFANS e um guia em português para comparar produtos, medidas, fotografias e custos de envio.">
+  <style>
+    :root{color-scheme:light;--paper:#f5f4ed;--ink:#20251e;--muted:#4f584b;--line:#cecfc1;--green:#263f32;--lime:#e1edaa;--white:#fff}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.65 system-ui,sans-serif}
+    .wrap{width:min(1120px,calc(100% - 2rem));margin-inline:auto}
+    a{color:inherit;text-underline-offset:.22em}
+    :focus-visible{outline:3px solid #8e4523;outline-offset:4px}
+    header,footer{background:var(--green);color:var(--white)}
+    .bar{padding:.85rem 0;display:flex;justify-content:space-between;gap:1rem;align-items:center;flex-wrap:wrap}
+    .bar strong{color:var(--lime)}
+    .hero{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(1.25rem,5vw,5rem);align-items:center;padding:clamp(1.5rem,5vw,4rem) 0 1.5rem}
+    h1,h2,h3{line-height:1.16;margin:0 0 .65em}
+    h1{font-size:clamp(2.6rem,7vw,5.4rem);letter-spacing:-.07em;margin-bottom:.25em}
+    h2{font-size:clamp(1.65rem,3.5vw,2.5rem);letter-spacing:-.04em}
+    h3{font-size:1.2rem}
+    p{margin:0 0 .9rem}
+    .lead{font-size:clamp(1.05rem,2vw,1.22rem);max-width:47ch}
+    .muted,figcaption{color:var(--muted)}
+    .button{display:inline-block;padding:.58rem .95rem;background:var(--green);color:var(--white);border-radius:.35rem;font-weight:700}
+    figure{margin:0}
+    img{display:block;width:100%;height:auto;background:var(--white)}
+    .hero img{aspect-ratio:4/3;object-fit:contain;border-radius:.5rem}
+    figcaption{font-size:.86rem;margin-top:.35rem}
+    section{padding:clamp(1.25rem,4vw,3rem) 0;border-top:1px solid var(--line)}
+    ul,ol{padding-inline-start:1.3rem}
+    .categories{list-style:none;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:.5rem;padding:0;margin:0}
+    .categories a{display:flex;height:100%;align-items:center;min-height:3.25rem;padding:.55rem .7rem;border:1px solid var(--line);border-radius:.35rem;background:var(--white);font-weight:650;overflow-wrap:anywhere}
+    .categories a:hover{background:var(--lime)}
+    .gallery,.guides{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem}
+    .gallery img{aspect-ratio:1;object-fit:contain;border-radius:.35rem}
+    .guides{grid-template-columns:repeat(2,minmax(0,1fr))}
+    article{padding:1.15rem;background:var(--white);border-radius:.45rem;border:1px solid var(--line)}
+    article p:last-child{margin-bottom:0}
+    .cost{margin-top:1rem;padding:1rem;background:var(--lime);border-radius:.45rem}
+    .cost p:last-child{margin:0}
+    details{border-bottom:1px solid var(--line);padding:.65rem 0}
+    summary{font-weight:700;cursor:pointer;padding:.25rem 0}
+    details p{max-width:75ch;margin:.45rem 0}
+    footer .bar p{margin:0}
+    @media(max-width:760px){.hero,.guides{grid-template-columns:1fr}.hero{gap:1rem}.hero img{max-height:18rem}.categories,.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "inLanguage": "pt",
+    "name": "PonyBuy spreadsheet | Categorias, tamanhos e envio",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "O que é um PonyBuy spreadsheet?",
+        "acceptedAnswer": {"@type": "Answer", "text": "É uma lista ou catálogo que organiza referências de produtos por categoria. Este guia reúne ligações para a CAFANS e mostra o que comparar antes de escolher um artigo."}
+      },
+      {
+        "@type": "Question",
+        "name": "Como escolher um tamanho entre duas opções?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Compare a tabela do anúncio com as medidas de uma peça que já lhe serve. Para calçado, meça ambos os pés e use o comprimento do maior como referência para a tabela do modelo."}
+      },
+      {
+        "@type": "Question",
+        "name": "O que mostram as fotos QC?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Quando disponíveis, as fotos de controlo de qualidade ajudam a conferir a cor, a etiqueta, as costuras e o estado aparente do artigo. A autenticidade requer verificação própria."}
+      },
+      {
+        "@type": "Question",
+        "name": "Como comparar o envio para Portugal e para o Brasil?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Peça uma cotação para o país e o código postal de destino. Compare o valor na sua moeda, o peso faturável, o rastreio e o que a cotação inclui sobre taxas de importação."}
+      },
+      {
+        "@type": "Question",
+        "name": "Para onde levam os botões de categoria?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Levam às respetivas categorias da CAFANS. As fotografias de marcas são referências de estilo e a disponibilidade deve ser confirmada no anúncio."}
+      }
+    ]
+  }
+  </script>
+  <!--
+  Pesquisa editorial: consultaram-se dez domínios distintos no índice web.
+  A página de resultados do Google estava inacessível; a ordem da primeira página não foi confirmada.
+  ponybuypicklist.com: pesquisa por produto e origem do anúncio
+  sopel.fit/ponybuy-spreadsheet: descoberta por categorias
+  qcradar.com/ponybuy-spreadsheet: distinção entre referência e fotos QC
+  spreadsheetponybuy.com: organização de categorias e fotos
+  ponybuyfind.com/spreadsheet-listings/: diferença entre catálogo e anúncio
+  taofind.com/spreadsheets/ponybuy: comparação cambial
+  sugargoous.com/ponybuy-spreadsheet: registo de ligações e inspeção
+  jadeship.com/spreadsheets: listas e pesquisa transversal
+  litbuyjordan.com/ponybuy-spreadsheet: consulta por modelo de calçado
+  ponybuytable.com: opções de entrega
+  Termos secundários recomendados: catálogo PonyBuy; guia de tamanhos PonyBuy;
+  fotos QC PonyBuy; envio internacional PonyBuy.
+  Consultas de cauda longa: sapatilhas por comprimento do pé; ténis por medida
+  em centímetros; medir a palmilha do calçado; tabela de tamanhos de sapatilhas;
+  tamanho de sweatshirt pelo peito; largura de ombros de uma camisola; comprimento
+  da manga do casaco; medir a cintura das calças; gancho e entreperna de calções;
+  boné por perímetro da cabeça; tamanho de camisa de futebol; comparar as peças de
+  um conjunto; medidas de roupa interior; medir o pulso para pulseira; largura de
+  uma armação de óculos; fotos QC de costuras; confirmar a etiqueta na foto QC;
+  identificar a variante do anúncio; guardar a referência do vendedor;
+  comparar envio para Portugal em euros; comparar frete para o Brasil em reais;
+  peso volumétrico de uma encomenda; custo total com conversão cambial;
+  verificar rastreio internacional.
+  -->
+<link rel="canonical" href="https://kakobuyfinds.github.io/ngaab/">
+</head>
+<body>
+  <header>
+    <div class="wrap bar">
+      <strong>Guia de compras</strong>
+      <a href="https://www.cafans.com">Visitar a CAFANS</a>
+    </div>
+  </header>
+  <main class="wrap">
+    <div class="hero">
+      <div>
+        <h1>PonyBuy spreadsheet</h1>
+        <p class="lead">Use este guia para encontrar a categoria certa na CAFANS, confirmar as medidas de um artigo e calcular quanto pode custar recebê-lo.</p>
+        <a class="button" href="https://www.cafans.com">Abrir a CAFANS</a>
+      </div>
+      <figure>
+        <img src="https://nikeclprod.vtexassets.com/arquivos/ids/160793-640-480/CW2288_111_A_PREM.jpg" width="640" height="480" alt="Sapatilha branca Nike Air Force 1 ’07 vista de perfil" loading="eager" fetchpriority="high">
+        <figcaption>Nike Air Force 1 ’07 · Referência visual de calçado</figcaption>
+      </figure>
+    </div>
+    <section aria-labelledby="categorias">
+      <h2 id="categorias">Categorias da CAFANS</h2>
+      <nav aria-label="Categorias de produtos">
+        <ul class="categories">
+          <li><a href="https://cafans.com/category-911-Shoes.html">Calçado</a></li>
+          <li><a href="https://cafans.com/category-912-Hoodies%2FSweaters.html">Sweatshirts e camisolas</a></li>
+          <li><a href="https://cafans.com/category-913-T-Shirts.html">T-shirts</a></li>
+          <li><a href="https://cafans.com/category-914-Jackets.html">Casacos</a></li>
+          <li><a href="https://cafans.com/category-915-Pants%2FShorts.html">Calças e calções</a></li>
+          <li><a href="https://cafans.com/category-916-Headwear.html">Bonés e chapéus</a></li>
+          <li><a href="https://cafans.com/category-917-Sets.html">Conjuntos</a></li>
+          <li><a href="https://cafans.com/category-918-underwear%2Funderpants.html">Roupa interior</a></li>
+          <li><a href="https://cafans.com/category-919-Jersey.html">Camisolas desportivas</a></li>
+          <li><a href="https://cafans.com/category-920-Accessories.html">Acessórios</a></li>
+        </ul>
+      </nav>
+    </section>
+    <section aria-labelledby="guias">
+      <h2 id="guias">Da lista ao anúncio</h2>
+      <div class="guides">
+        <article>
+          <h3>Como usar um catálogo PonyBuy</h3>
+          <p>Comece pela categoria e compare modelos com a mesma finalidade. Ao abrir o anúncio, guarde a referência do vendedor e confirme a variante, a cor, o material e o tamanho. Se a fotografia reunir várias cores, procure a imagem correspondente à opção selecionada.</p>
+        </article>
+        <article>
+          <h3>Guia de tamanhos em centímetros</h3>
+          <p>Nas sapatilhas ou ténis, compare o comprimento do pé com a tabela do modelo. Numa sweatshirt, meça a largura do peito com a peça estendida. Nos casacos, acrescente ombros e manga. Em calças e calções, confira cintura, gancho e entreperna.</p>
+          <p>Num conjunto, compare as medidas de cada peça. Para um boné, meça o perímetro da cabeça. Para uma pulseira, confirme o comprimento útil e a folga desejada no pulso.</p>
+        </article>
+        <article>
+          <h3>Como ler fotografias de controlo de qualidade</h3>
+          <p>Se houver fotos QC, procure imagens da variante escolhida. Veja as costuras em luz uniforme, confira a etiqueta de tamanho e compare fechos, solas ou ferragens com a descrição. Se houver uma fotografia com régua, veja onde começa a medição antes de interpretar o valor.</p>
+        </article>
+        <article>
+          <h3>Envio internacional para Portugal e Brasil</h3>
+          <p>Para Portugal, compare o total em euros e peça uma cotação para o código postal de entrega. Para o Brasil, compare em reais e verifique os detalhes do frete para o CEP. Confirme o rastreio, as dimensões da embalagem e os encargos incluídos na cotação.</p>
+          <p>Para artigos volumosos, pergunte se o transportador cobra pelo peso real ou pelo peso volumétrico. Registe as duas medidas para comparar propostas com a mesma embalagem.</p>
+        </article>
+      </div>
+      <aside class="cost" aria-label="Cálculo do custo total">
+        <p><strong>Para estimar o custo total</strong>, some o valor do artigo, o transporte local e internacional e as taxas aplicáveis. Converta os valores para a mesma moeda e confirme quais os encargos já incluídos.</p>
+      </aside>
+    </section>
+    <section aria-labelledby="referencias">
+      <h2 id="referencias">Referências de estilo</h2>
+      <p class="muted">Guia independente. As imagens ilustram estilos e detalhes de construção.</p>
+      <div class="gallery">
+        <figure>
+          <img src="https://assets.christiandior.com/is/image/diorprod/327C25A2970X5803_E01-1?%24default_GHC%24=&amp;crop=457%2C150%2C1095%2C1361&amp;wid=360" width="360" height="447" alt="Casaco azul Dior Oblique com capuz e bolsos à frente" loading="lazy" decoding="async">
+          <figcaption>Dior · Casaco com capuz</figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.ctfassets.net/brzb6u29244a/5Oo86Jx6nzdbR1XuSYpl2d/f2329ed82882452fa40bf54aff9c2a9c/HeroCategory-Mobile_8726324HBJO9666_001_Default.png?fm=webp&amp;w=360&amp;h=360&amp;fit=fill&amp;q=70" width="360" height="360" alt="Modelo com boné bege de monograma GG e casaco Gucci a condizer" loading="lazy" decoding="async">
+          <figcaption>Gucci · Boné com monograma</figcaption>
+        </figure>
+        <figure>
+          <img src="https://us.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-lv-monogram-lovers-ring--M1933M_PM1_Worn%20view.png?hei=360&amp;wid=360&amp;fmt=jpeg" width="360" height="360" alt="Modelo com óculos escuros e anel prateado Louis Vuitton junto ao rosto" loading="lazy" decoding="async">
+          <figcaption>Louis Vuitton · Anel Monogram Lovers</figcaption>
+        </figure>
+        <figure>
+          <img src="https://assets.hermes.com/is/image/hermesproduct/armreif-clic-h--700001F%208X-front-wm-1-0-0-1000-1000_g.jpg?wid=360&amp;hei=360" width="360" height="360" alt="Pulseira Hermès Clic H azul com fecho dourado em forma de H" loading="lazy" decoding="async">
+          <figcaption>Hermès · Pulseira Clic H</figcaption>
+        </figure>
+      </div>
+    </section>
+    <section aria-labelledby="perguntas">
+      <h2 id="perguntas">Perguntas frequentes</h2>
+      <details open>
+        <summary>O que é um PonyBuy spreadsheet?</summary>
+        <p>É uma lista ou catálogo que organiza referências de produtos por categoria. Este guia reúne ligações para a CAFANS e mostra o que comparar antes de escolher um artigo.</p>
+      </details>
+      <details>
+        <summary>Como escolher um tamanho entre duas opções?</summary>
+        <p>Compare a tabela do anúncio com as medidas de uma peça que já lhe serve. Para calçado, meça ambos os pés e use o comprimento do maior como referência para a tabela do modelo.</p>
+      </details>
+      <details>
+        <summary>O que mostram as fotos QC?</summary>
+        <p>Quando disponíveis, as fotos de controlo de qualidade ajudam a conferir a cor, a etiqueta, as costuras e o estado aparente do artigo. A autenticidade requer verificação própria.</p>
+      </details>
+      <details>
+        <summary>Como comparar o envio para Portugal e para o Brasil?</summary>
+        <p>Peça uma cotação para o país e o código postal de destino. Compare o valor na sua moeda, o peso faturável, o rastreio e o que a cotação inclui sobre taxas de importação.</p>
+      </details>
+      <details>
+        <summary>Para onde levam os botões de categoria?</summary>
+        <p>Levam às respetivas categorias da CAFANS. As fotografias de marcas são referências de estilo e a disponibilidade deve ser confirmada no anúncio.</p>
+      </details>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap bar">
+      <p>PonyBuy spreadsheet · Guia independente</p>
+      <a href="https://www.cafans.com">CAFANS</a>
+    </div>
+  </footer>
+</body>
+</html>
